@@ -52,10 +52,9 @@ extension ViewStateProtocol where Self: UIViewController {
     }
     
     /**
-     Manages and adds different states views on the basis of the state
+     Manages and adds different views on the basis of the state
      
      - parameter state: different states like loading, error, empty and default(content)
-     - parameter superview: base view to add a state subview
      */
     func addView(withState state: StatesType) {
         // error state, empty state & loading state

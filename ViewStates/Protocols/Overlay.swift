@@ -14,8 +14,11 @@ import UIKit
 }
 
 extension Overlay where Self: UIViewController {
-
-    func addOverlay() {
+    
+    /**
+     Adds choice overlay on the view
+     */
+    func addChoiceOverlay() {
         overlay = States.instanceFromNib()
         overlay?.center = view.center
         view.addSubview(overlay!)
@@ -23,16 +26,24 @@ extension Overlay where Self: UIViewController {
         tableViewReference?.tableFooterView = getFooterButton()
         tableViewReference?.isHidden = true
     }
-    
+    /**
+     Hides the choice overlay
+     */
     func hideOverlay() {
         overlay?.alpha = 0
     }
     
+    /**
+     Show the choice overlay
+     */
     func showOverlay() {
         tableViewReference?.isHidden = true
         overlay?.alpha = 1
     }
     
+    /**
+     Add actions to the state buttons
+     */
     func addAction() {
         for (index, button) in ((overlay!.subviews as? [UIButton])?.enumerated())! {
             button.tag = index
@@ -40,6 +51,9 @@ extension Overlay where Self: UIViewController {
         }
     }
     
+    /**
+     Sets footer to the table view
+     */
     func getFooterButton() -> UIButton {
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 0, y: 0, width: 70, height: 30)
@@ -51,6 +65,9 @@ extension Overlay where Self: UIViewController {
         return button
     }
     
+    /**
+     Reload the table
+     */
     func reloadTable() {
         tableViewReference?.reloadData()
     }

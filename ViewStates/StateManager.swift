@@ -37,7 +37,7 @@ class StateManager {
         viewStore[state]?.removeFromSuperview()
         viewStore[state] = nil
     }
-
+    
     /**
      Remove all views
      */

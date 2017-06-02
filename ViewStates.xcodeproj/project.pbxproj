@@ -81,12 +81,12 @@
 				3B18290B1EDEF2C200957F50 /* Protocols */,
 				3B1829061EDEF13A00957F50 /* Views */,
 				3B1828EF1EDEEE3500957F50 /* AppDelegate.swift */,
+				3B18291A1EDF407400957F50 /* StateManager.swift */,
+				3B1829181EDF402800957F50 /* StatesType.swift */,
 				3B1828F61EDEEE3500957F50 /* Assets.xcassets */,
 				3B1828FB1EDEEE3500957F50 /* Info.plist */,
 				3B1828F81EDEEE3500957F50 /* LaunchScreen.storyboard */,
 				3B1828F31EDEEE3500957F50 /* Main.storyboard */,
-				3B18291A1EDF407400957F50 /* StateManager.swift */,
-				3B1829181EDF402800957F50 /* StatesType.swift */,
 			);
 			path = ViewStates;
 			sourceTree = "<group>";

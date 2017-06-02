@@ -9,6 +9,11 @@
 struct Content {
     var data: [String]?
     
+    /**
+     Gets the data to be displayed on table view
+     
+     - returns: array of data to be displayed on te table
+     */
     func getContent() -> [String] {
         return ["Content 1", "Content 2", "Content 3"]
     }

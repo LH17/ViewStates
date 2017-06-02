@@ -15,11 +15,14 @@ class StateViewController: UIViewController {
     var overlay: States?
     var content: Content?
     
+    /**
+     Add choice overlay on the view. Also, add action to the state buttons
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableViewReference = tableView
-        addOverlay()
+        addChoiceOverlay()
         addAction()
         content = Content()
     }
@@ -27,16 +30,27 @@ class StateViewController: UIViewController {
 
 extension StateViewController: Overlay, ViewStateProtocol {
     
+    /**
+     Handles the tap on each button. Takes care of view transitions
+     
+     - parameter sender: the type of UIView/UIButton that triggered the event
+     */
     @objc func handleTap(_ sender: UIView) {
+        // hide the choice overlay before views transition
         hideOverlay()
+        
         switch sender.tag {
         case 0:
+            
+            // Displays the table views
             createDelay {
                 self.tableView.isHidden = false
                 self.tableView.dataSource = self
                 self.reloadTable()
             }
         case 1:
+            
+            // Adds Error View
             createDelay {
                 self.errorMessage = "Bad Request. Click here to try again"
                 self.addView(withState: .error)
@@ -45,6 +59,8 @@ extension StateViewController: Overlay, ViewStateProtocol {
                 
             }
         case 2:
+            
+            // Adds Empty View
             createDelay {
                 self.addView(withState: .empty)
                 let emptyView = self.stateManager?.viewForState(StatesType.empty.rawValue)
@@ -52,21 +68,31 @@ extension StateViewController: Overlay, ViewStateProtocol {
                 
             }
         case 3:
+            
+            // Remove all the views and display the choice overlay
             createDelay {
                 self.removeAllViews()
                 self.showOverlay()
             }
         default:
+            
+            // Display the choice overlay
             showChoiceOverlay()
             break
         }
     }
     
+    /**
+     Displays the choice overlay
+     */
     func showChoiceOverlay() {
         removeAllViews()
         showOverlay()
     }
     
+    /**
+     Creates a delay to simulate network request
+     */
     func createDelay(completion : @escaping () -> ()) {
         addView(withState: .loading)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
