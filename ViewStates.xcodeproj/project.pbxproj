@@ -23,6 +23,10 @@
 		3B1829191EDF402800957F50 /* StatesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1829181EDF402800957F50 /* StatesType.swift */; };
 		3B18291B1EDF407400957F50 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18291A1EDF407400957F50 /* StateManager.swift */; };
 		3B18291E1EDF416900957F50 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18291D1EDF416900957F50 /* Content.swift */; };
+		3B388CF21EE1717300D3A294 /* Content.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3B388CEE1EE1717300D3A294 /* Content.gif */; };
+		3B388CF31EE1717300D3A294 /* Empty.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3B388CEF1EE1717300D3A294 /* Empty.gif */; };
+		3B388CF41EE1717300D3A294 /* Error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3B388CF01EE1717300D3A294 /* Error.gif */; };
+		3B388CF51EE1717300D3A294 /* Loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3B388CF11EE1717300D3A294 /* Loading.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		3B1829181EDF402800957F50 /* StatesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesType.swift; sourceTree = "<group>"; };
 		3B18291A1EDF407400957F50 /* StateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		3B18291D1EDF416900957F50 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		3B388CEE1EE1717300D3A294 /* Content.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Content.gif; sourceTree = "<group>"; };
+		3B388CEF1EE1717300D3A294 /* Empty.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Empty.gif; sourceTree = "<group>"; };
+		3B388CF01EE1717300D3A294 /* Error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Error.gif; sourceTree = "<group>"; };
+		3B388CF11EE1717300D3A294 /* Loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Loading.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,17 +84,18 @@
 		3B1828EE1EDEEE3500957F50 /* ViewStates */ = {
 			isa = PBXGroup;
 			children = (
+				3B388CED1EE1715300D3A294 /* Assets */,
 				3B1829081EDEF14500957F50 /* Controller */,
 				3B18291C1EDF414E00957F50 /* Model */,
 				3B18290B1EDEF2C200957F50 /* Protocols */,
 				3B1829061EDEF13A00957F50 /* Views */,
 				3B1828EF1EDEEE3500957F50 /* AppDelegate.swift */,
-				3B18291A1EDF407400957F50 /* StateManager.swift */,
-				3B1829181EDF402800957F50 /* StatesType.swift */,
 				3B1828F61EDEEE3500957F50 /* Assets.xcassets */,
 				3B1828FB1EDEEE3500957F50 /* Info.plist */,
 				3B1828F81EDEEE3500957F50 /* LaunchScreen.storyboard */,
 				3B1828F31EDEEE3500957F50 /* Main.storyboard */,
+				3B18291A1EDF407400957F50 /* StateManager.swift */,
+				3B1829181EDF402800957F50 /* StatesType.swift */,
 			);
 			path = ViewStates;
 			sourceTree = "<group>";
@@ -127,6 +136,18 @@
 				3B18291D1EDF416900957F50 /* Content.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3B388CED1EE1715300D3A294 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3B388CEE1EE1717300D3A294 /* Content.gif */,
+				3B388CEF1EE1717300D3A294 /* Empty.gif */,
+				3B388CF01EE1717300D3A294 /* Error.gif */,
+				3B388CF11EE1717300D3A294 /* Loading.gif */,
+			);
+			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +210,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B388CF31EE1717300D3A294 /* Empty.gif in Resources */,
 				3B1828FA1EDEEE3500957F50 /* LaunchScreen.storyboard in Resources */,
+				3B388CF21EE1717300D3A294 /* Content.gif in Resources */,
 				3B1828F71EDEEE3500957F50 /* Assets.xcassets in Resources */,
 				3B1828F51EDEEE3500957F50 /* Main.storyboard in Resources */,
+				3B388CF51EE1717300D3A294 /* Loading.gif in Resources */,
 				3B1829021EDEEE8200957F50 /* States.xib in Resources */,
+				3B388CF41EE1717300D3A294 /* Error.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
