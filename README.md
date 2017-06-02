@@ -2,10 +2,10 @@
 ViewStates is an approach to manage network states using protocol extensions written in Swift 3.
 
 <h3 align="center">
-<img src="Assets/Content.gif" alt="Screenshot of ViewStates for iOS" />
-<img src="Assets/Error.gif" alt="Screenshot of ViewStates for iOS" />
-<img src="Assets/Empty.gif" alt="Screenshot of ViewStates for iOS" />
-<img src="Assets/Loading.gif" alt="Screenshot of ViewStates for iOS" />
+<img src="ViewStates/Assets/Content.gif" alt="Screenshot of Content state" />
+<img src="ViewStates/Assets/Error.gif" alt="Screenshot of Error state" />
+<img src="ViewStates/Assets/Empty.gif" alt="Screenshot of Empty state" />
+<img src="ViewStates/Assets/Loading.gif" alt="Screenshot of Loading state" />
 </h3>
 
 ## Getting Started
