@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="States" customModule="ViewStates" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-Bh-pGw">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="42"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="A7s-b7-hNs"/>
+                    </constraints>
+                    <state key="normal" title="Content">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yq-0L-Z0h">
+                    <rect key="frame" x="0.0" y="42" width="200" height="42"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="lKR-eT-oir"/>
+                    </constraints>
+                    <state key="normal" title="Error">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6z-vR-VvR">
+                    <rect key="frame" x="0.0" y="84" width="200" height="42"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="uRc-Ry-LK4"/>
+                    </constraints>
+                    <state key="normal" title="Empty">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8S-RY-xLE">
+                    <rect key="frame" x="0.0" y="126" width="200" height="42"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="EVR-Fb-anF"/>
+                    </constraints>
+                    <state key="normal" title="Loading">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="u8S-RY-xLE" secondAttribute="bottom" id="0u8-gn-fVw"/>
+                <constraint firstAttribute="trailing" secondItem="8Yq-0L-Z0h" secondAttribute="trailing" id="1JZ-Er-u8e"/>
+                <constraint firstItem="c6z-vR-VvR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8sd-VA-mae"/>
+                <constraint firstItem="8Yq-0L-Z0h" firstAttribute="top" secondItem="lQi-Bh-pGw" secondAttribute="bottom" id="Ada-F4-4Sj"/>
+                <constraint firstAttribute="trailing" secondItem="u8S-RY-xLE" secondAttribute="trailing" id="BOj-qS-J0b"/>
+                <constraint firstItem="u8S-RY-xLE" firstAttribute="top" secondItem="c6z-vR-VvR" secondAttribute="bottom" id="H3E-D8-f6R"/>
+                <constraint firstAttribute="trailing" secondItem="lQi-Bh-pGw" secondAttribute="trailing" id="H3f-0r-pxU"/>
+                <constraint firstAttribute="trailing" secondItem="c6z-vR-VvR" secondAttribute="trailing" id="Pvr-YS-w7E"/>
+                <constraint firstItem="c6z-vR-VvR" firstAttribute="top" secondItem="8Yq-0L-Z0h" secondAttribute="bottom" id="RL8-jZ-VeR"/>
+                <constraint firstItem="lQi-Bh-pGw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X77-yu-9uT"/>
+                <constraint firstItem="8Yq-0L-Z0h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aWK-v0-95T"/>
+                <constraint firstItem="lQi-Bh-pGw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gju-uC-9Z7"/>
+                <constraint firstItem="u8S-RY-xLE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="phG-g7-pOL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-17" y="24"/>
+        </view>
+    </objects>
+</document>
